@@ -271,7 +271,7 @@ public handle_SavedResult(failstate, Handle: query, error[], errnum, data[], siz
   new expireAt    = SQL_ReadResult(query, res_expire_at)
   new flags       = SQL_ReadResult(query, res_flags)
 
-  CA_Log(logLevel_Debug, "Player gag saved {'%s', '%s', '%s', '%s', '%s', '%s', '%s', %i, %i, %i} (queryTime: '%.3f' sec)", \
+  CA_Log(logLevel_Debug, "[Storage] Player gag saved {'%s', '%s', '%s', '%s', '%s', '%s', '%s', %i, %i, %i} (queryTime: '%.3f' sec)", \
     name, authID, IP, reason, adminName, adminAuthID, adminIP, createdAt, expireAt, flags,\
     queuetime \
   )
